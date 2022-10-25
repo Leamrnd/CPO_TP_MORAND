@@ -14,4 +14,8 @@ public class Moussaka {
     public Moussaka (int nbCal) {
         nbCalories = nbCal;
     }
+@Override
+public String toString () {
+ return ("Cette Moussaka comporte " +nbCalories +" calories");    
+}
 }
