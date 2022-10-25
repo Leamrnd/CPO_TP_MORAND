@@ -13,7 +13,7 @@ public class TP2_Bieres_MORAND {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { // creation de nouvelles BouteilleBiere et affichage de leurs caracteristiques + decapsuler certaines
         // TODO code application logic here
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des Trolls", 7.0, "Dubuisson");
         uneBiere.lireEtiquette();
