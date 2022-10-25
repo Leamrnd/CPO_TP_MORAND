@@ -9,7 +9,6 @@ package tp2_convertisseurobjet_morand;
  * @author leamo
  */
 public class Convertisseur {
-    static Scanner sc = new Scanner(System.in);
     int nbConversions;
     
     public Convertisseur () {
@@ -58,30 +57,4 @@ public class Convertisseur {
     public String toString() {
     return "nb de conversions " + nbConversions;
         }
-    
-// Method to read the value of temperature given by the user
-  static double input(String word){
-    System.out.println("Enter "+word+" value:");
-    double val = sc.nextDouble();
-    return val;
-  }
-  
-// Method to print converted value of temperature
-  static void output(double val, String word){
-    System.out.printf("%s value: %.2f",word,val);
-  }
-    
-    
-    
-    
-    
-  // Driver Method
-  public static void main(String args[]){
-    System.out.println("1. Celcius en Fahrenheit\\n2. Celcius en Kelvin\\n\"+\n" +
-"              \"3. Fahrenheit en Celcius\\n4. Fahrenheit en Kelvin\\n\"+\n" +
-"              \"5. Kelvin en Celcius\\n6. Kelvin en Fahrenheit\\n7. Exit")
-    do {
-        System.out.printnln("\nEntrez votre choix: ");
-        
-    }
-   
+}
