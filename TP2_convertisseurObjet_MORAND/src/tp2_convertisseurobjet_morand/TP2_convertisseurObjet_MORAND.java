@@ -15,7 +15,18 @@ public class TP2_convertisseurObjet_MORAND {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Convertisseur CtoF = new Convertisseur 
+    Convertisseur Conv1 = new Convertisseur();
+    Conv1.CelciusVersFahrenheit(30);
+    Conv1.KelvinVersCelcius(300);
+    System.out.println(Conv1);
+        
+    Convertisseur Conv2 = new Convertisseur();
+    Conv2.FahrenheitVersKelvin(70);
+    Conv2.KelvinVersFahrenheit(170);
+    Conv2.CelciusVersKelvin(25);
+    System.out.println(Conv2);
+        
+        
         
         
         
