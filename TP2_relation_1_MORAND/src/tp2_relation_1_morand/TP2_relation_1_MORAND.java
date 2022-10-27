@@ -14,15 +14,17 @@ public class TP2_relation_1_MORAND {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // on initialise 4 voitures + 2 proprietaires
     Voiture uneClio = new Voiture ("Clio", "Renault", 5 ) ;
     Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5 ) ;
     Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
     Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
+    Voiture unePolo = new Voiture("Polo", "Volkswagen", 8);
+    Voiture uneC3 = new Voiture("C3", "Citroen",7);
     Personne bob = new Personne("Bobby", "Sixkiller"); 
     Personne reno = new Personne("Reno", "Raines");
     System.out.println("liste des voitures disponibles "+ uneClio +
-    "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
+    "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ; 
 
     bob.liste_voitures[0] = uneClio ;
     bob.nbVoitures = 1 ;
@@ -48,6 +50,12 @@ public class TP2_relation_1_MORAND {
     reno.liste_voitures[0] ) ;
     System.out.println("la deuxieme voiture de Reno est " +
     reno.liste_voitures[1] ) ;
+    
+    
+    bob.ajouter_voiture(unePolo);
+    bob.ajouter_voiture(une2008);
+    bob.ajouter_voiture(uneC3);
+    
     
     
 
