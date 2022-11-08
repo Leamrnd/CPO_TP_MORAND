@@ -4,6 +4,8 @@
  */
 package tp3_wow;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author leamo
@@ -25,6 +27,16 @@ public class TP3_Wow {
         Baton Baton1 = new Baton("Chêne", 4,5);
         Baton Baton2 = new Baton("Charme", 5,6);
         System.out.println(Baton1);
+        
+        
+        ArrayList<Armes> Inventaire = new ArrayList<Armes>();
+    Inventaire.add(Excalibur);
+    Inventaire.add(Durandal);
+    Inventaire.add(Baton1);
+    Inventaire.add(Baton2);
+    
+    Inventaire.get(0);
+    System.out.println(Inventaire);
     }
     
 }
