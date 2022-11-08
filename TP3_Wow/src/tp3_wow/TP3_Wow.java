@@ -4,6 +4,10 @@
  */
 package tp3_wow;
 
+
+import ARMES.Epée;
+import ARMES.Baton;
+import ARMES.Armes;
 import java.util.ArrayList;
 
 /**
