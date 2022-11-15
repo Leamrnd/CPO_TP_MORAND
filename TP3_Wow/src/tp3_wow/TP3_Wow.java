@@ -65,16 +65,28 @@ public class TP3_Wow {
    
     
     
-    Gandalf.ajouterArme(Baton2);
-    Gandalf.choisirArme("Charme");
+  
     
-    System.out.print(Gandalf);
 
-    Conan.ajouterArme(Excalibur);
-    Conan.choisirArme("Excalibur");
-    
+
+
+Baton Baguette_Sureau = new Baton("Baguette_Sureau", 50, 6);
+Epée Sabre = new Epée("Sabre", 68, 4);
+
+
+Conan.ajouterArme(Baton1);
+Conan.ajouterArme(Sabre);
+Conan.ajouterArme(Excalibur);
+
+Conan.choisirArme("Sabre");
+
+
+Gandalf.ajouterArme(Baton2);
+Gandalf.ajouterArme(Baguette_Sureau);
+Gandalf.ajouterArme(Durandal);
+
+
 System.out.println(Persos);
-    
     }
     
 }

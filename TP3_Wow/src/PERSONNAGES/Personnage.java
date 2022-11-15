@@ -27,19 +27,12 @@ public class Personnage {
         
     }
     
-    @Override 
-    public String toString() {
-      arme_en_main = null;
-        String rep;
-        rep = nom + PV + " PV" + arme_en_main;
-        return rep;
-    }
-    
 
 
    
     public void ajouterArme(Armes a) {
         if (InvPerso.size() < 5) InvPerso.add(a);
+        System.out.println(a + " a bien ete ajoute a " + nom);
     }
 
     public Armes getArme_en_main() {
@@ -48,14 +41,34 @@ public class Personnage {
     
     
     public void choisirArme(String n) {
-        for (int i = 0 ; i < 5; i++) {
+        for (int i = 0 ; i <InvPerso.size() ; i++) {
             if (InvPerso.get(i).getNom().equals(n)) {
                 arme_en_main = InvPerso.get(i);
-                System.out.println(n + " a bien ete equipe");
+                System.out.println(n + " a bien ete equipe a " + nom);
             }
             }
         }
+    
+    
+        @Override 
+    public String toString() {
+        String rep;
+        rep = nom + PV + " PV";
+        return rep;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
     
     
 
