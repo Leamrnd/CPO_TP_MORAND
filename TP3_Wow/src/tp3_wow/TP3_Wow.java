@@ -5,6 +5,9 @@
 package tp3_wow;
 
 
+import PERSONNAGES.Personnage;
+import PERSONNAGES.Magicien;
+import PERSONNAGES.Guerrier;
 import ARMES.Epée;
 import ARMES.Baton;
 import ARMES.Armes;
@@ -41,6 +44,37 @@ public class TP3_Wow {
     
     Inventaire.get(0);
     System.out.println(Inventaire);
+    
+    Magicien Gandalf = new Magicien("Gandalf", 65, true);
+    Magicien Garcimore = new Magicien("Garcimore", 44, false);
+    
+    System.out.println(Garcimore);
+    
+    Guerrier Conan = new Guerrier("Conan",78,false);
+    Guerrier Lannister = new Guerrier("Lannister", 45, true);
+    
+    
+    
+    ArrayList<Personnage> Persos = new ArrayList<Personnage>();
+    Persos.add(Gandalf);
+    Persos.add(Garcimore);
+    Persos.add(Conan);
+    Persos.add(Lannister);
+    
+    System.out.println(Persos);
+   
+    
+    
+    Gandalf.ajouterArme(Baton2);
+    Gandalf.choisirArme("Charme");
+    
+    System.out.print(Gandalf);
+
+    Conan.ajouterArme(Excalibur);
+    Conan.choisirArme("Excalibur");
+    
+System.out.println(Persos);
+    
     }
     
 }
